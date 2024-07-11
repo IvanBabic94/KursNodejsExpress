@@ -7,7 +7,7 @@ body
     main
         if prods.length > 0
             div.grid
-                for product of prods
+                for product in prods
                     article.card_product-item
                         header.card__header
                             h1.product__title #{product.title}
