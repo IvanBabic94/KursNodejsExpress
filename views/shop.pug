@@ -1,0 +1,23 @@
+include includes/head
+link(rel="stylesheet", href="/css/product.css")
+
+body
+    include includes/navigation
+
+    main
+        if prods.length > 0
+            div.grid
+                for product of prods
+                    article.card_product-item
+                        header.card__header
+                            h1.product__title #{product.title}
+
+                        div.card__image
+                            img(src=" ", alt="A Book")
+                        div.card__content
+                            h2.product__price $19.99
+                            p.product__description A very interesting book about so many even more interesting things!
+                        div.card__actions
+                            button.btn Add to Cart
+        else
+            h1 No Products Found!
