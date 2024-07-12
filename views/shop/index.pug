@@ -11,9 +11,8 @@ body
                     article.card_product-item
                         header.card__header
                             h1.product__title #{product.title}
-
                         div.card__image
-                            img(src=product.imageUrl)
+                            img(src=product.imageUrl, alt=productTitle)
                         div.card__content
                             h2.product__price $#{product.price}
                             p.product__description #{product.description}
@@ -21,3 +20,4 @@ body
                             button.btn Add to Cart
         else
             h1 No Products Found!
+    include ../includes/end
