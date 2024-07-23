@@ -19,9 +19,7 @@ const orderSchema = new Schema({
       required: true,
       ref: 'User'
     }
-    
   }
-
 });
 
 module.exports = mongoose.model('Order', orderSchema);
