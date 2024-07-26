@@ -7,13 +7,7 @@ const { validationResult } = require('express-validator/check');
 
 const User = require('../models/user');
 
-// const transporter = nodemailer.createTransport(
-//   sendgridTransport({
-//     auth: {
-      
-//     }
-//   })
-// );
+// const transporter 
 
 exports.getLogin = (req, res, next) => {
   let message = req.flash('error');
